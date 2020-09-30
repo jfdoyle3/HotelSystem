@@ -15,4 +15,7 @@ public class StandardRoom {
     private String type; // Array or List use instead.
     private int numberOfRooms;
     private int numberOfBeds;
+
+   // override reserve = if party size > beds * 2 print unavailable otherwise
+    //run standard reserve
 }
