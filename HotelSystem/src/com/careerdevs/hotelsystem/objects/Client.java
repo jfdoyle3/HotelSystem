@@ -6,7 +6,6 @@ public class Client {
     private String firstName;
     private String lastName;
     private String group;
-    private int partySize;
     private int currentBill;    //long / double / float
     private int prepaid;        // long /double / float
     private String phoneNumber;   // split("-")
@@ -17,7 +16,6 @@ public class Client {
         this.firstName = firstName;
         this.lastName = lastName;
         this.group = group;
-        this.partySize = partySize;
         this.currentBill = currentBill;
         this.prepaid = prepaid;
         this.phoneNumber = phoneNumber;
@@ -26,10 +24,18 @@ public class Client {
     }
 
   //  makePayment = increase prepaid
+    public static void MakePayment(){
 
+    }
   //  chargeRoom = increase current bill
+    public static void ChargeRoom(){
 
+    }
   //          getOustanding = get outstanding balance.
+
+    public static void GetOutstandng(){
+
+    }
 
     }
 

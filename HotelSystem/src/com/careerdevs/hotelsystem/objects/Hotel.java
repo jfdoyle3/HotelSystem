@@ -1,6 +1,6 @@
 package com.careerdevs.hotelsystem.objects;
 
-public class Hotel {
+public class Hotel{
 
     // inherents{
     // Standard Rooms{

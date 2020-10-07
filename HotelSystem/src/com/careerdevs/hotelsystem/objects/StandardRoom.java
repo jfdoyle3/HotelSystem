@@ -1,6 +1,6 @@
 package com.careerdevs.hotelsystem.objects;
 
-public class StandardRoom {
+public class StandardRoom extends Room {
     //  inherents ROOM
 //    {
 //    private int number;
@@ -11,11 +11,21 @@ public class StandardRoom {
 //    private Client occupant;
 //    private int averagePrice;   // long / double / float
 //}
-
     private String type; // Array or List use instead.
     private int numberOfRooms;
     private int numberOfBeds;
 
-   // override reserve = if party size > beds * 2 print unavailable otherwise
+    public StandardRoom(){
+        super();
+    }
+
+    public StandardRoom(int number, String type, int numberOfRooms, int numberOfBeds) {
+        super(number);
+        this.type = type;
+        this.numberOfRooms = numberOfRooms;
+        this.numberOfBeds = numberOfBeds;
+    }
+
+    // override reserve = if party size > beds * 2 print unavailable otherwise
     //run standard reserve
 }
