@@ -17,6 +17,16 @@ public class SuiteRoom {
     private int numberOfBeds;
     private Boolean kitchenette;
     private Boolean needsRestock;
+	public SuiteRoom(String type, int numberOfRooms, int numberOfBeds, Boolean kitchenette, Boolean needsRestock) {
+		super();
+		this.type = type;
+		this.numberOfRooms = numberOfRooms;
+		this.numberOfBeds = numberOfBeds;
+		this.kitchenette = kitchenette;
+		this.needsRestock = needsRestock;
+	}
+    
+  
 
   //  override reserve = include a check on needsRestock then run standard reserve.
 

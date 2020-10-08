@@ -15,9 +15,7 @@ public class StandardRoom extends Room {
     private int numberOfRooms;
     private int numberOfBeds;
 
-    public StandardRoom(){
-        super();
-    }
+
 
     public StandardRoom(int number, String type, int numberOfRooms, int numberOfBeds) {
         super(number);
@@ -26,6 +24,8 @@ public class StandardRoom extends Room {
         this.numberOfBeds = numberOfBeds;
     }
 
+    
+   
     // override reserve = if party size > beds * 2 print unavailable otherwise
     //run standard reserve
 }
