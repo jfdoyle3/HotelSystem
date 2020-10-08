@@ -3,20 +3,30 @@ package com.careerdevs.hotelsystem.objects;
 public class Room {
 
     private int number;
-    private String roomType;   // Array or List use instead.
+    protected String roomType;   // Array or List use instead.
     private int floor;
-    private Boolean isOccupied;
+    protected Boolean isOccupied;
     private Boolean needsCleaning;
     private Client occupant;
-    private int averagePrice;   // long / double / float
-
-    public Room(int number) {
-        this.number=number;
-    }
+    protected float averagePrice;   // long / double / float
 
 
 
-    //   reserve = Should change room to isOccupied and assign the client to the occupant and update client bill to average price if isOccupied and needsCleaning are false otherwise print “unavailable” Should return true if successful or false if issue.
+
+
+    public Room(int number, String roomType, int floor, Boolean isOccupied, Boolean needsCleaning, Client occupant,
+			float averagePrice) {
+		super();
+		this.number = number;
+		this.roomType = roomType;
+		this.floor = floor;
+		this.isOccupied = isOccupied;
+		this.needsCleaning = needsCleaning;
+		this.occupant = occupant;
+		this.averagePrice = averagePrice;
+	}
+
+	//   reserve = Should change room to isOccupied and assign the client to the occupant and update client bill to average price if isOccupied and needsCleaning are false otherwise print â€œunavailableâ€� Should return true if successful or false if issue.
     public static void Reserve() {
 
     }

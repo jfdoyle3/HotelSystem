@@ -18,7 +18,7 @@ public class StandardRoom extends Room {
 
 
     public StandardRoom(int number, String type, int numberOfRooms, int numberOfBeds) {
-        super(number);
+        super(numberOfBeds, type, numberOfBeds, isOccupied, occupant, averagePrice);
         this.type = type;
         this.numberOfRooms = numberOfRooms;
         this.numberOfBeds = numberOfBeds;
