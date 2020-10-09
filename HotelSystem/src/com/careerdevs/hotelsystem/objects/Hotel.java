@@ -1,6 +1,6 @@
 package com.careerdevs.hotelsystem.objects;
 
-public class Hotel extends Rooms{
+public class Hotel extends Room{
 
     // inherents{
     // Standard Rooms{
@@ -12,13 +12,15 @@ public class Hotel extends Rooms{
     //  private int availableSuite;
     //private int reservedSuite;
 
-    private Client client;
+    private static Boolean isOccupied;
+	private static float averagePrice;
+	private Client client;
     private String name;
     private int rooms;
     
     
 	public Hotel(Client client, String name, int rooms) {
-		super();
+		super(rooms, name, rooms, isOccupied, isOccupied, client, averagePrice);
 		this.client = client;
 		this.name = name;
 		this.rooms = rooms;

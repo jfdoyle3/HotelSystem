@@ -1,7 +1,8 @@
 package com.careerdevs.hotelsystem.objects;
 
 public class StandardRoom extends Room {
-    //  inherents ROOM
+
+	//  inherents ROOM
 //    {
 //    private int number;
 //    private String roomType;   // Array or List use instead.

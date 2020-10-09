@@ -7,7 +7,7 @@ public class Room {
     private int floor;
     protected Boolean isOccupied;
     private Boolean needsCleaning;
-    private Client occupant;
+    protected static Client occupant;
     protected float averagePrice;   // long / double / float
 
 

@@ -12,14 +12,13 @@ public class Client {
 	private int roomNumber;
 	private String roomType; // Array or List use instead.
 
-	public Client(String name, String firstName, String lastName, String group, float currentBill, float prepaid,
+	public Client(String name, String firstName, String lastName, String group, float prepaid,
 			String phoneNumber, int roomNumber, String roomType) {
-		super();
+		
 		this.name = name;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.group = group;
-		this.currentBill = currentBill;
 		this.prepaid = prepaid;
 		this.phoneNumber = phoneNumber;
 		this.roomNumber = roomNumber;
