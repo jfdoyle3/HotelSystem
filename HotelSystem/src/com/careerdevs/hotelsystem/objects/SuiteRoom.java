@@ -1,6 +1,6 @@
 package com.careerdevs.hotelsystem.objects;
 
-public class SuiteRoom {
+public class SuiteRoom extends Room {
     //  inherents ROOM
 //    {
 //    private int number;
@@ -18,7 +18,7 @@ public class SuiteRoom {
     private Boolean kitchenette;
     private Boolean needsRestock;
 	public SuiteRoom(String type, int numberOfRooms, int numberOfBeds, Boolean kitchenette, Boolean needsRestock) {
-		super();
+		super(number, roomType, floor, isOccupied, needsCleaning, occupant, averagePrice );
 		this.type = type;
 		this.numberOfRooms = numberOfRooms;
 		this.numberOfBeds = numberOfBeds;

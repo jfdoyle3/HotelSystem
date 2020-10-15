@@ -24,9 +24,7 @@ public class StandardRoom extends Room {
         this.numberOfRooms = numberOfRooms;
         this.numberOfBeds = numberOfBeds;
     }
-
     
-   
     // override reserve = if party size > beds * 2 print unavailable otherwise
     //run standard reserve
 }

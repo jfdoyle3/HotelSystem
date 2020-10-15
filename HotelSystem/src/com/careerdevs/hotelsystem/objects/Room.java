@@ -2,21 +2,20 @@ package com.careerdevs.hotelsystem.objects;
 
 public class Room {
 
-    private int number;
-    protected String roomType;   // Array or List use instead.
+    protected static int number;
+    protected static String roomType;   // Array or List use instead.
     private int floor;
-    protected Boolean isOccupied;
+    protected static Boolean isOccupied;
     private Boolean needsCleaning;
     protected static Client occupant;
-    protected float averagePrice;   // long / double / float
+    protected static float averagePrice;   // long / double / float
 
 
 
 
 
-    public Room(int number, String roomType, int floor, Boolean isOccupied, Boolean needsCleaning, Client occupant,
+    public Room(int number, String roomType, int floor, Boolean isOccupied, Client occupant,
 			float averagePrice) {
-		super();
 		this.number = number;
 		this.roomType = roomType;
 		this.floor = floor;

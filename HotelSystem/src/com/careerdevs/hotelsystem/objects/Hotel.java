@@ -20,18 +20,32 @@ public class Hotel extends Room{
     
     
 	public Hotel(Client client, String name, int rooms) {
-		super(rooms, name, rooms, isOccupied, isOccupied, client, averagePrice);
+		super(rooms, name, isOccupied, isOccupied, client, averagePrice);
 		this.client = client;
 		this.name = name;
 		this.rooms = rooms;
 	}
+	
+	public static void AddRoom() {
+		
+	}
 
-
+	public static void ReserveRoom() {
+		
+	}
+	
+	public static void CheckoutRoom() {
+		
+	}
+	
+	public static void GetClientBalance() {
+		
+	}
 
  //   addRoom = add either a standard or suite to appropriate collection
 	
 
-  //          reserveRoom = pull a room from the correct list. if empty print ‘unavailable’ otherwise, run the checkout for the room and move the room from available to reserved. Using the correct collection will make this easier. Add client to clients list
+  //          reserveRoom = pull a room from the correct list. if empty print "unavailable" otherwise, run the checkout for the room and move the room from available to reserved. Using the correct collection will make this easier. Add client to clients list
 
   //          checkoutRoom = run the checkout process for a room and move the room from reserved to available.
 
