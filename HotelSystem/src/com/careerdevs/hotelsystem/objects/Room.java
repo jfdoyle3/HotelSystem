@@ -23,20 +23,33 @@ public class Room {
 
 	// reserve = Should change room to isOccupied and assign the client to the
 	// occupant and update client bill to average price if isOccupied and
-	// needsCleaning are false otherwise print â€œunavailableâ€� Should return true
+	// needsCleaning are false otherwise print 'unavailable' Should return true
 	// if successful or false if issue.
 	public static void Reserve() {
 
 	}
 
 	// checkout = remove the client from object and mark isOccupied as false, set
-	// needsCleaning to true, display o outstanding balance for the client.
 	public static void Checkout() {
-
+		
 	}
 
+	public Boolean getIsOccupied() {
+		return isOccupied;
+	}
+
+	public void setIsOccupied(Boolean isOccupied) {
+		this.isOccupied = isOccupied;
+	}
+
+	// needsCleaning to true, display o outstanding balance for the client.
 	// clean = set needsCleaning to false
-	public static void Clean() {
-
+	public Boolean getNeedsCleaning() {
+		return needsCleaning;
 	}
+
+	public void setNeedsCleaning(Boolean needsCleaning) {
+		this.needsCleaning = needsCleaning;
+	}
+
 }
