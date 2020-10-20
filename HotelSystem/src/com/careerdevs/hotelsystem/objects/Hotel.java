@@ -5,6 +5,11 @@ public class Hotel {
 	private String hotelName;
 	private int totalRooms;
 
+	public Hotel(String hotelName, int totalRooms) {
+		
+		this.hotelName = hotelName;
+		this.totalRooms = totalRooms;
+	}
 
 	public static void AddRoom() {
 

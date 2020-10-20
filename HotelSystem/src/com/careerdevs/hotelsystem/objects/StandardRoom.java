@@ -13,7 +13,6 @@ public class StandardRoom extends Room {
 	}
 
 
-    
     // override reserve = if party size > beds * 2 print unavailable otherwise
     //run standard reserve
 }
