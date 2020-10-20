@@ -10,8 +10,7 @@ public class Client {
 	private int roomNumber;
 	private String roomType; // Array or List use instead.
 
-	public Client(String name, int partySize, double currentBill, double prepaid, String phoneNumber, int roomNumber,
-			String roomType) {
+	public Client(String name, int partySize, double currentBill, double prepaid, String phoneNumber, int roomNumber,String roomType) {
 
 		this.name = name;
 		this.partySize = partySize;

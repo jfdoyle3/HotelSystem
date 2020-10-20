@@ -1,7 +1,5 @@
 package com.careerdevs.hotelsystem.objects;
 
-
-
 public class Hotel {
 
 	private String hotelName;

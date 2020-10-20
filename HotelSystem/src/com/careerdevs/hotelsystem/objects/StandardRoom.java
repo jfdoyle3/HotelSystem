@@ -6,10 +6,8 @@ public class StandardRoom extends Room {
     private int numberOfRooms;
     private int numberOfBeds;
     
-	public StandardRoom(int roomNumber, String roomType, int floor, Boolean isOccupied, Boolean needsCleaning,
-			Client occupant, double averagePrice, String type, int numberOfRooms, int numberOfBeds) {
-		super(roomNumber, roomType, floor, isOccupied, needsCleaning, occupant, averagePrice);
-		this.type = type;
+	public StandardRoom(int roomNumber,double averagePrice, int numberOfRooms, int numberOfBeds) {
+		super(roomNumber, "Standard", averagePrice);
 		this.numberOfRooms = numberOfRooms;
 		this.numberOfBeds = numberOfBeds;
 	}

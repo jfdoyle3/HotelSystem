@@ -14,14 +14,10 @@ public class Main {
 		
 		Client client = new Client("Jim", 1, 1.00, .50, "555-555-5555", 101, "SuiteRoom");
 
-		Room room = new Room(101, "Single", 1, true, false, client, 100.00);
+		Room room = new Room(101,"Single", 100.00);
 		
-		StandardRoom StandardRoom=new StandardRoom(101, "Single", 1, true, false, client, 100.00,"Single",1,1);
+		StandardRoom StandardRoom=new StandardRoom(101,100.00,1,1);
 		
-		SuiteRoom suiteRoom=new SuiteRoom(101, "Single", 1, true, false, client, 100.00,"Single",1,1,true,false);
-		
-		
-		
-
+		SuiteRoom suiteRoom=new SuiteRoom(101, 100.00,1,1,true,false);
 	}
 }

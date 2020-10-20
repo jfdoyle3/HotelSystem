@@ -2,17 +2,14 @@ package com.careerdevs.hotelsystem.objects;
 
 public class SuiteRoom extends Room {
 
-	private String type; // Array or List use instead.
+	
 	private int numberOfRooms;
 	private int numberOfBeds;
 	private Boolean kitchenette;
 	private Boolean needsRestock;
 
-	public SuiteRoom(int roomNumber, String roomType, int floor, Boolean isOccupied, Boolean needsCleaning,
-			Client occupant, double averagePrice, String type, int numberOfRooms, int numberOfBeds, Boolean kitchenette,
-			Boolean needsRestock) {
-		super(roomNumber, roomType, floor, isOccupied, needsCleaning, occupant, averagePrice);
-		this.type = type;
+	public SuiteRoom(int roomNumber,double averagePrice, int numberOfRooms, int numberOfBeds, Boolean kitchenette,Boolean needsRestock) {
+		super(roomNumber,"Suite", averagePrice);
 		this.numberOfRooms = numberOfRooms;
 		this.numberOfBeds = numberOfBeds;
 		this.kitchenette = kitchenette;
