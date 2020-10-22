@@ -5,7 +5,7 @@ public class Client {
 	private String name;
 	private int partySize;
 	private double currentBill;
-	private double prepaid;
+	private  double prepaid;
 	private String phoneNumber; // split("-")
 	private int roomNumber;
 	private String roomType; // Array or List use instead.
@@ -24,13 +24,15 @@ public class Client {
 
 
 	// makePayment = increase prepaid
-	public static void MakePayment() {
-
+	public double MakePayment(double increase) {
+		double newPrepaid=prepaid+increase;
+		return newPrepaid;
 	}
 
 	// chargeRoom = increase current bill
-	public static void ChargeRoom() {
-
+	public double ChargeRoom(double charge) {
+		double roomCharge=charge+currentBill;
+		return roomCharge;
 	}
 	// getOustanding = get outstanding balance.
 
