@@ -16,7 +16,7 @@ public class Hotel {
 	}
 
 	public static void ReserveRoom() {
-
+		
 	}
 
 	public static void CheckoutRoom() {

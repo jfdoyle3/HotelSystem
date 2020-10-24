@@ -10,10 +10,10 @@ public class Room {
 	private Client occupant;
 	private double averagePrice;
 
-	public Room(int roomNumber, String roomType,double averagePrice) {
-		this.roomNumber = roomNumber%100;
+	public Room(int roomNumber, String roomType, double averagePrice) {
+		this.roomNumber = roomNumber % 100;
 		this.roomType = roomType;
-		this.floor = roomNumber/100;
+		this.floor = roomNumber / 100;
 		isOccupied = false;
 		needsCleaning = false;
 		this.averagePrice = averagePrice;
@@ -23,13 +23,14 @@ public class Room {
 	// occupant and update client bill to average price if isOccupied and
 	// needsCleaning are false otherwise print 'unavailable' Should return true
 	// if successful or false if issue.
-	public static void Reserve() {
-
+	public boolean Reserve() {
+		return true;
 	}
 
 	// checkout = remove the client from object and mark isOccupied as false, set
-	public static void Checkout() {
-		
+	public boolean Checkout() {
+		isOccupied = false;
+		return isOccupied;
 	}
 
 	public Boolean getIsOccupied() {
