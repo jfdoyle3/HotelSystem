@@ -25,18 +25,16 @@ public class Client {
 
 	// makePayment = increase prepaid
 	public double MakePayment(double increase) {
-		double newPrepaid=prepaid+increase;
-		return newPrepaid;
+		return prepaid+increase;
 	}
 
 	// chargeRoom = increase current bill
 	public double ChargeRoom(double charge) {
-		double roomCharge=charge+currentBill;
-		return roomCharge;
+		return charge+currentBill;
 	}
 	// getOustanding = get outstanding balance.
 
-	public static void getOutstandng() {
-
+	public double getOutstandng() {
+		return currentBill;
 	}
 }
