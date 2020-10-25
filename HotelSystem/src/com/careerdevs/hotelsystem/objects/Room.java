@@ -28,9 +28,8 @@ public class Room {
 	}
 
 	// checkout = remove the client from object and mark isOccupied as false, set
-	public boolean Checkout() {
+	public void Checkout() {
 		isOccupied = false;
-		return isOccupied;
 	}
 
 	public Boolean getIsOccupied() {
@@ -43,12 +42,12 @@ public class Room {
 
 	// needsCleaning to true, display o outstanding balance for the client.
 	// clean = set needsCleaning to false
-	public Boolean getNeedsCleaning() {
-		return needsCleaning;
+	public void getNeedsCleaning() {
+		needsCleaning=true;
 	}
 
 	public void setNeedsCleaning(Boolean needsCleaning) {
-		this.needsCleaning = needsCleaning;
+		this.needsCleaning = true;
 	}
 
 }
