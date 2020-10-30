@@ -1,4 +1,4 @@
-package com.careerdevs.hotelsystem.objects;
+package com.careerdevs.UI;
 
 public class Console {
 
@@ -12,5 +12,8 @@ public class Console {
 
 	public static void needsCleaning(boolean clean) {
 		System.out.printf("Needs Cleaning: %b",clean);
+	}
+	public static void displayCurentBill(double currentBill) {
+		System.out.println(currentBill);
 	}
 }

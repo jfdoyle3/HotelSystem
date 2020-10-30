@@ -2,7 +2,6 @@ package com.careerdevs.hotelsystem.objects;
 
 public class SuiteRoom extends Room {
 
-	
 	private int numberOfRooms;
 	private int numberOfBeds;
 	private Boolean kitchenette;
@@ -17,7 +16,7 @@ public class SuiteRoom extends Room {
 	}
 	
 	// override reserve = include a check on needsRestock then run standard reserve.
-
+	
 	// override checkout = set needsRestock to true run standard checkout.
 
 	// restock() = set needs restock to false
