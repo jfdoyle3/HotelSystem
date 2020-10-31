@@ -16,8 +16,18 @@ public class SuiteRoom extends Room {
 	}
 	
 	// override reserve = include a check on needsRestock then run standard reserve.
+	public void reserve() {
+		if (needsRestock) {
+			System.out.println("reserve room");
+		}
+	}
 	
 	// override checkout = set needsRestock to true run standard checkout.
-
+	public boolean checkOut() {
+		return true;
+	}
 	// restock() = set needs restock to false
+	public boolean restock() {
+		return false;
+	}
 }

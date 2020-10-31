@@ -4,6 +4,7 @@ public class Hotel {
 
 	private String hotelName;
 	private int totalRooms;
+	private int addRoom;
 
 	public Hotel(String hotelName, int totalRooms) {
 		
@@ -11,20 +12,24 @@ public class Hotel {
 		this.totalRooms = totalRooms;
 	}
 
-	public static void AddRoom() {
-
-	}
-
-	public static void ReserveRoom() {
+	public  void AddRoom() {
+		 addRoom++;
+		if (addRoom>totalRooms) {
+			System.out.println("Hotel Full");
+		}
 		
 	}
 
-	public static void CheckoutRoom() {
-
+	public  void ReserveRoom() {
+		
 	}
 
-	public static void GetClientBalance() {
+	public  void CheckoutRoom() {
+		
+	}
 
+	public  void GetClientBalance() {
+		
 	}
 
 	// addRoom = add either a standard or suite to appropriate collection
