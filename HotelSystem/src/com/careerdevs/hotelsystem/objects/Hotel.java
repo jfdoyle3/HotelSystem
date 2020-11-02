@@ -15,10 +15,11 @@ public class Hotel {
 		this.totalRooms = totalRooms;
 	}
 
-	public void AddRoom() {
-		addRoom++;
-		if (addRoom > totalRooms) {
-			System.out.println("Hotel Full");
+	public void AddRoom(String roomType) {
+	 if (hotel.containsKey(roomType)) {
+		 hotel.put(roomType,hotel.get(roomType)+1);
+     } else{
+         hotel.put(roomType,1);
 		}
 
 	}

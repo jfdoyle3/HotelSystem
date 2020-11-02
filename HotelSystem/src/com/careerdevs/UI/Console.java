@@ -16,4 +16,8 @@ public class Console {
 	public static void displayCurentBill(double currentBill) {
 		System.out.println(currentBill);
 	}
+	public static void isUnavailable() {
+		System.out.println("Room Unavailable");
+	}
+	
 }
