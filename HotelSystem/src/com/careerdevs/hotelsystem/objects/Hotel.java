@@ -1,35 +1,38 @@
 package com.careerdevs.hotelsystem.objects;
 
+import java.util.HashMap;
+
 public class Hotel {
 
 	private String hotelName;
 	private int totalRooms;
 	private int addRoom;
+	private HashMap<String, Integer> hotel;
 
 	public Hotel(String hotelName, int totalRooms) {
-		
+
 		this.hotelName = hotelName;
 		this.totalRooms = totalRooms;
 	}
 
-	public  void AddRoom() {
-		 addRoom++;
-		if (addRoom>totalRooms) {
+	public void AddRoom() {
+		addRoom++;
+		if (addRoom > totalRooms) {
 			System.out.println("Hotel Full");
 		}
+
+	}
+
+	public void ReserveRoom() {
 		
 	}
 
-	public  void ReserveRoom() {
-		
+	public void CheckoutRoom() {
+
 	}
 
-	public  void CheckoutRoom() {
-		
-	}
+	public void GetClientBalance() {
 
-	public  void GetClientBalance() {
-		
 	}
 
 	// addRoom = add either a standard or suite to appropriate collection
