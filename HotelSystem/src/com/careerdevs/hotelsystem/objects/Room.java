@@ -36,9 +36,7 @@ public class Room {
 		return isOccupied;
 	}
 
-	public void setIsOccupied(Boolean isOccupied) {
-		this.isOccupied = isOccupied;
-	}
+
 
 	// needsCleaning to true, display o outstanding balance for the client.
 	// clean = set needsCleaning to false
@@ -48,6 +46,11 @@ public class Room {
 
 	public void setNeedsCleaning(Boolean needsCleaning) {
 		this.needsCleaning = true;
+	}
+
+	public void reserve(int partySize) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
