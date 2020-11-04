@@ -57,5 +57,9 @@ public class Room {
 		// TODO Auto-generated method stub
 		
 	}
+	public String getRoomType(String roomType) {
+
+		return roomType;
+	}
 
 }
