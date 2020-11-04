@@ -17,7 +17,8 @@ public class SuiteRoom extends Room {
 	
 	// override reserve = include a check on needsRestock then run standard reserve.
 	public void reserve() {
-		if (needsRestock) {
+		boolean reservedRoom = false;
+		if (reservedRoom) {
 			System.out.println("reserve room");
 		}
 	}

@@ -1,5 +1,7 @@
 package com.careerdevs.hotelsystem.objects;
 
+import java.util.HashMap;
+
 public class Client {
 
 	private String name;
@@ -9,6 +11,7 @@ public class Client {
 	private String phoneNumber; // split("-")
 	private int roomNumber;
 	private String roomType; // Array or List use instead.
+	private HashMap<String,Object> clientInfo;
 
 	public Client(String name, int partySize, double currentBill, double prepaid, String phoneNumber, int roomNumber,
 			String roomType) {
@@ -33,4 +36,12 @@ public class Client {
 	public double getOutstandng() {
 		return currentBill;
 	}
+
+	public String getName() {
+		return name;
+	}
+
+
+
+	
 }

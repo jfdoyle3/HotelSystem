@@ -7,7 +7,8 @@ public class Hotel {
 	private String hotelName;
 	private int totalRooms;
 	private int addRoom;
-	private HashMap<String, Integer> hotel;
+	private HashMap<String, Object> hotel;
+	
 
 	public Hotel(String hotelName, int totalRooms) {
 
@@ -17,11 +18,10 @@ public class Hotel {
 
 	public void AddRoom(String roomType) {
 	 if (hotel.containsKey(roomType)) {
-		 hotel.put(roomType,hotel.get(roomType)+1);
+		 hotel.put(roomType,(int)hotel.get(roomType)+1);
      } else{
          hotel.put(roomType,1);
 		}
-
 	}
 
 	public void ReserveRoom() {

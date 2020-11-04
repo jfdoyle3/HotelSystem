@@ -23,8 +23,13 @@ public class Room {
 	// occupant and update client bill to average price if isOccupied and
 	// needsCleaning are false otherwise print 'unavailable' Should return true
 	// if successful or false if issue.
-	public boolean Reserve() {
-		return true;
+	public void Reserve(int number,String client) {
+		isOccupied=true;
+		roomNumber=number;
+		client=occupant.getName();
+		
+		
+				
 	}
 
 	// checkout = remove the client from object and mark isOccupied as false, set
