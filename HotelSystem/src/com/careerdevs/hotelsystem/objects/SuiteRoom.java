@@ -1,5 +1,7 @@
 package com.careerdevs.hotelsystem.objects;
 
+import com.careerdevs.UI.Console;
+
 public class SuiteRoom extends Room {
 
 	private int numberOfRooms;
@@ -19,7 +21,7 @@ public class SuiteRoom extends Room {
 	public void reserve() {
 		boolean reservedRoom = false;
 		if (reservedRoom) {
-			System.out.println("reserve room");
+			Console.reserved();
 		}
 	}
 	

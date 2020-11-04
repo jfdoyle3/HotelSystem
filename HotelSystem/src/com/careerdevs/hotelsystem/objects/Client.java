@@ -13,6 +13,11 @@ public class Client {
 	private String roomType; // Array or List use instead.
 	private HashMap<String,Object> clientInfo;
 
+	public Client (String name,String phoneNumber) {
+		this.name = name;
+		this.phoneNumber = phoneNumber;
+	}
+	
 	public Client(String name, int partySize, double currentBill, double prepaid, String phoneNumber, int roomNumber,
 			String roomType) {
 
@@ -40,6 +45,13 @@ public class Client {
 	public String getName() {
 		return name;
 	}
+
+	public String getPhoneNumber() {
+		return phoneNumber;
+	}
+
+	
+	
 
 
 

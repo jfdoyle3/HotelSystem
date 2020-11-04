@@ -7,6 +7,8 @@ public class Hotel {
 	private String hotelName;
 	private int totalRooms;
 	private int addRoom;
+	private int standard;
+	private int suites;
 	private HashMap<String, Object> hotel;
 	
 
@@ -14,6 +16,7 @@ public class Hotel {
 
 		this.hotelName = hotelName;
 		this.totalRooms = totalRooms;
+		
 	}
 
 	public void AddRoom(String roomType) {
@@ -36,6 +39,10 @@ public class Hotel {
 
 	}
 
+	public String getHotelName() {
+		return hotelName;
+	}
+
 	// addRoom = add either a standard or suite to appropriate collection
 
 	// reserveRoom = pull a room from the correct list. if empty print "unavailable"
@@ -48,4 +55,6 @@ public class Hotel {
 
 	// getClientBalance = get the balance of a client by either their room number or
 	// name
+	
+	
 }
