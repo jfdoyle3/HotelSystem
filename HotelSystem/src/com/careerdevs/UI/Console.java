@@ -1,7 +1,11 @@
 package com.careerdevs.UI;
 
+import java.text.DecimalFormat;
+
 public class Console {
 
+	 private static DecimalFormat df2 = new DecimalFormat("###.##");
+	 
 	public static void welcome(String name) {
 		System.out.printf("Welcome to %s Hotel\n-----------------------\nSign the register book\n", name);
 	}
@@ -47,10 +51,10 @@ public class Console {
 	}
 
 	public static void roomType() {
-		System.out.print("What type of room are you going to be staying in? (St)andard or (Su)ite ");
+		System.out.print("\nWhat type of room are you going to be staying in? (St)andard or (Su)ite ");
 	}
 	public static void roomPrice(double standard, double suite) {
-		System.out.printf("Price for a Standard Room is: %f , Suite %f ", standard, suite);
+		System.out.print("Room pricing is: Standard: $"+df2.format(standard)+" , Suite: $"+df2.format(suite));
 	}
 
 }

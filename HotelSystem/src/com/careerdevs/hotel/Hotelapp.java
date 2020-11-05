@@ -13,7 +13,9 @@ public class Hotelapp {
 		Console.welcome(hotel.getHotelName());
 		Client clientInfo=ClientForm.inputClientInfo();
 		Console.horzRule();
-		
+		double standard=100.00;
+		double suite=200.00;
+		Console.roomPrice(standard, suite);
 		Console.roomType();
 		String roomType=Input.inputString();
 		if(roomType.equals("St") || roomType.equals("st")) {
@@ -23,6 +25,7 @@ public class Hotelapp {
 			roomType="Suite";
 		}
 		System.out.print("\n t: "+roomType);
+		
 		
 		
 		
