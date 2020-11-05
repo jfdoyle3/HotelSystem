@@ -13,6 +13,7 @@ public class Hotelapp {
 		Console.welcome(hotel.getHotelName());
 		Client clientInfo=ClientForm.inputClientInfo();
 		Console.horzRule();
+		
 		Console.roomType();
 		String roomType=Input.inputString();
 		if(roomType.equals("St") || roomType.equals("st")) {

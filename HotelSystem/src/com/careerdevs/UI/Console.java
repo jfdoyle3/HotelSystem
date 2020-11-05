@@ -47,7 +47,10 @@ public class Console {
 	}
 
 	public static void roomType() {
-		System.out.println("What type of room are you going to be staying in? (St)andard or (Su)ite ");
+		System.out.print("What type of room are you going to be staying in? (St)andard or (Su)ite ");
+	}
+	public static void roomPrice(double standard, double suite) {
+		System.out.printf("Price for a Standard Room is: %f , Suite %f ", standard, suite);
 	}
 
 }
